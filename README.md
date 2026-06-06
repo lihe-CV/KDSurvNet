@@ -12,30 +12,6 @@ KDSurvNet is a biology-privileged deep learning framework that enables non-invas
 
 ---
 
-## 🔬 Study Design
-
-This multicenter observational study involved **5,538 patients** across **12 independent cohorts** from **5 cancer centers**:
-
-- **Retrospective validation**: 4,180 gastric cancer patients
-- **Prospective validation**: 179 gastric cancer patients  
-- **Cross-cancer generalizability**: 766 colorectal cancer patients (436 colon, 330 rectal)
-- **Immunotherapy response prediction**: 413 patients (352 + 61 in two independent cohorts)
-
----
-
-## ✨ Key Features
-
-- **Knowledge Distillation Framework**: Transfers biological information from Teacher network (with IHC markers) to Student network (CT + clinical data only)
-- **Multi-modal Fusion**: Integrates imaging features, radiomics, and clinical data
-- **Robust Performance**: 
-  - 5-year DFS: AUC 0.731 (95% CI: 0.709-0.754)
-  - 5-year OS: AUC 0.747 (95% CI: 0.728-0.767)
-  - Prospective validation DFS: AUC 0.739 (95% CI: 0.666-0.811)
-- **Immunotherapy Response Prediction**: Significantly outperforms PD-L1 CPS (AUC: 0.756-0.761 vs. 0.615-0.632)
-- **Cross-cancer Generalizability**: Validated in colorectal cancer cohorts
-
----
-
 ## 💻 Usage
 
 ### 1. Train Teacher Model (with IHC)
