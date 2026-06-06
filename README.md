@@ -26,7 +26,7 @@ This multicenter observational study involved **5,538 patients** across **12 ind
 ## ✨ Key Features
 
 - **Knowledge Distillation Framework**: Transfers biological information from Teacher network (with IHC markers) to Student network (CT + clinical data only)
-- **Multi-modal Fusion**: Integrates imaging features (1000-dim), radiomics (584-dim), and clinical data (9-dim)
+- **Multi-modal Fusion**: Integrates imaging features, radiomics, and clinical data
 - **Robust Performance**: 
   - 5-year DFS: AUC 0.731 (95% CI: 0.709-0.754)
   - 5-year OS: AUC 0.747 (95% CI: 0.728-0.767)
@@ -53,28 +53,6 @@ This multicenter observational study involved **5,538 patients** across **12 ind
 - Progressive distillation factor: 0 → 1 (epoch 2000-4000)
 
 *[Figure: Insert architecture diagram here]*
-
----
-
-## 📊 Dataset Structure
-
-```
-dataset/
-└── SMU/
-    ├── data/
-    │   ├── 1.h5          # Patient data in HDF5 format
-    │   ├── 2.h5
-    │   └── ...
-    ├── two_cls_split.csv  # Train/val split for 2-class task
-    └── four_cls_split.csv # Train/val split for 4-class task
-```
-
-**Data Format**: Each `.h5` file contains:
-- CT image patches (224×224)
-- Radiomics features (584-dim)
-- Clinical features (9-dim)
-- IHC markers (8-dim, for teacher training only)
-- Survival labels (time, event)
 
 ---
 
