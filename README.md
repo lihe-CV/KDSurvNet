@@ -10,8 +10,6 @@
 
 KDSurvNet is a biology-privileged deep learning framework that enables non-invasive inference of tumor immune microenvironment (TIME) for survival prediction and immunotherapy response assessment in gastric cancer. By transferring biological knowledge from invasive TIME biomarkers to routine CT imaging through cross-modal knowledge distillation, KDSurvNet provides a scalable and deployable solution for precision immuno-oncology.
 
-**Key Innovation**: This work establishes a "virtual biopsy" strategy that leverages knowledge distillation to transfer tissue-derived immune information into radiological imaging, eliminating the need for invasive immunohistochemistry (IHC) at inference time.
-
 ---
 
 ## 🔬 Study Design
